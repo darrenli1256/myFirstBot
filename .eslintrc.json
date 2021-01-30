@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    // "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "indent": ["warn", "tab"],
+
+        // make a rule on deciding whether to lay spacing befor or after a comma
+        "comma-spacing": ["warn", { "before": false, "after": true }],
+        
+        // enforces consistent spacing inside array brackets.
+        "array-bracket-spacing" : ["warn", "never"],
+        
+        // enforces consistent spacing inside an open block token and the next token on the same line. Default set as "always"
+        "block-spacing" : "warn",
+        
+        // quotes
+        "quotes" : ["warn", "double", { "allowTemplateLiterals": true }],
+        
+        // tailing semicolon
+        "semi" : ["warn", "always"],
+        
+        // spacing before and after a semicolon
+        "semi-spacing": ["warn", {"before": false, "after": true}],
+        
+        // where to put tailing semicolon
+        "semi-style" : ["warn", "last"],
+        
+        // disallow reassigning function declarations
+        "no-func-assign" : "warn",  
+        
+        // no empty functions
+		"no-empty-function" : "warn",
+
+		// spaces between the function name and the opening parenthesis
+		"func-call-spacing" : ["warn", "never"],
+
+		// requires consistent usage of line breaks between arguments
+		"function-call-argument-newline" : ["warn", "consistent"],
+
+		// There must be at least one whitespzce between // (or /*) and comment
+		"spaced-comment" : ["warn", "always"],
+
+		// enforces consistent line endings, CRLF(/r/n) ==> choose "windows" & LF(/n) ==> choose "unix" 
+        "linebreak-style" : ["warn", "windows"]
+    }
+}
